@@ -1,0 +1,79 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name ="Certification" verbose ="1" >
+
+    <test name ="challenge01"  group-by-instances="true" >
+        <classes>
+            <class name ="challenge01.Challenge1" >   <!-- packageName.className -->
+                <methods>
+                    <exclude name="goToGoogle"></exclude>
+                    <exclude name="verifyGoogleTitle"></exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="challenge02" group-by-instances="true">
+        <classes>
+            <class name ="challenge02.Challenge02" >
+                <methods>
+                    <include name="challenge02.carPartSearch01"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="challenge03" group-by-instances="true">
+        <classes>
+            <class name ="challenge03.Challenge03Test" >
+                <methods>
+                    <include name="challenge03.createDesiredReports"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="challenge04" group-by-instances="true">
+        <classes>
+            <class name ="challenge04.Challenge04Test" >
+                <methods>
+                    <include name="challenge04.testFindFibonacciValue"></include>
+                    <include name="challenge04.test1UsingSoftAssertion"></include>
+                    <include name="challenge04.test2UsingSoftAssertion"></include>
+                    <include name="challenge04.testNumberToWord"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="challenge05" group-by-instances="true">
+        <classes>
+            <class name ="challenge05.Challenge05Test" >
+                <methods>
+                    <include name="challenge05.CoPartSearchPorscheChgTo100Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="challenge06" group-by-instances="true">
+        <classes>
+            <class name ="challenge06.Challenge06Test" >
+                <methods>
+                    <include name="challenge06.Challenge06Test"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="challenge07" group-by-instances="true">
+        <classes>
+            <class name ="challenge07.Challenge07Test" >
+                <methods>
+                    <include name="challenge07.createDesiredReports"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+</suite>
